@@ -10,7 +10,7 @@
  * but responses are held in the browser instead of being sent anywhere.
  */
 window.SURVEY_CONFIG = {
-  endpoint: "https://script.google.com/macros/s/AKfycbw8MstIy_VWQvcMVaTvGR1DV7B5Rcz07Shv6ioADm7dwynCB41hCRVsynQs2lRbPST0/exec",
+  endpoint: "https://script.google.com/macros/s/AKfycbyMFlmronImdzUoyiNtPMu7wLKNi1HlqtmbLlZ4UXQraiiye3aqN7L1MWhmdrEEmqLR/exec",
   meetingLabel: "Divisional Tasking Meeting",
   contactEmail: ""
 };
