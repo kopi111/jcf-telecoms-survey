@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-JM">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sensitization &amp; Communication Survey — JCF Telecommunications Division</title>
+<meta name="description" content="Feedback survey for officers who attended the Telecommunications Division's Sensitization and Communication presentation at their Divisional Tasking Meeting.">
+<meta name="theme-color" content="#314095">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/jcf-crest.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/jcf-crest.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<div class="chequer" aria-hidden="true"></div>
+
+<a class="skip" href="#main">Skip to the survey</a>
+
+<header class="masthead">
+  <img class="masthead__crest" src="assets/jcf-crest.png" width="423" height="512"
+       alt="Jamaica Constabulary Force crest">
+  <div class="masthead__words">
+    <p class="masthead__force">Jamaica Constabulary Force</p>
+    <p class="masthead__div">Telecommunications Division</p>
+  </div>
+</header>
+
+<div class="progress" id="progress" hidden>
+  <p class="progress__count" id="progressCount"><span class="vh">Section </span><span id="stepNow">01</span><span class="progress__slash">/</span><span id="stepTotal">05</span></p>
+  <div class="chevrons" id="chevrons" role="progressbar" aria-labelledby="progressCount" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1"></div>
+  <p class="progress__name" id="progressName">Your details</p>
+</div>
+
+<main id="main">
+
+  <!-- ============ COVER ============ -->
+  <section class="screen screen--cover" id="cover" aria-labelledby="coverTitle">
+    <h1 id="coverTitle" class="cover__title">Sensitization &amp; Communication Survey</h1>
+    <p class="cover__lede">
+      The Telecommunications Division recently delivered a Sensitization and
+      Communication presentation at your Divisional Tasking Meeting. Your answers
+      tell us what landed, what was missed, and where we need to come back.
+    </p>
+
+    <ol class="toc" aria-label="Sections in this survey">
+      <li class="toc__item"><span class="toc__num">1</span><span class="toc__label">Your details</span></li>
+      <li class="toc__item"><span class="toc__num">2</span><span class="toc__label">The presentation</span></li>
+      <li class="toc__item"><span class="toc__num">3</span><span class="toc__label">Disaster readiness</span></li>
+      <li class="toc__item"><span class="toc__num">4</span><span class="toc__label">Gaps &amp; follow-up</span></li>
+      <li class="toc__item"><span class="toc__num">5</span><span class="toc__label">Communication &amp; access</span></li>
+    </ol>
+
+    <dl class="facts">
+      <div class="facts__row"><dt>Questions</dt><dd id="factQuestions">—</dd></div>
+      <div class="facts__row"><dt>Sections</dt><dd>5</dd></div>
+      <div class="facts__row"><dt>Time</dt><dd>About 5 minutes</dd></div>
+      <div class="facts__row"><dt>Your name</dt><dd>Optional</dd></div>
+    </dl>
+
+    <button class="btn btn--primary btn--wide" type="button" id="startBtn">Begin the survey</button>
+    <p class="cover__resume" id="resumeNote" hidden>
+      An unfinished response is saved on this device. Beginning will pick up where you left off.
+    </p>
+
+    <p class="cover__note">
+      Your Division, rank and unit are required so responses can be grouped and
+      followed up. Your name is optional — say what you actually think.
+    </p>
+  </section>
+
+  <!-- ============ QUESTION SECTIONS (rendered) ============ -->
+  <form id="surveyForm" novalidate hidden>
+    <div id="sections"></div>
+
+    <div class="alert alert--error" id="formError" role="alert" hidden></div>
+
+    <nav class="nav" aria-label="Survey navigation">
+      <button class="btn btn--ghost" type="button" id="backBtn">Back</button>
+      <button class="btn btn--primary" type="button" id="nextBtn">Continue</button>
+      <button class="btn btn--primary" type="submit" id="submitBtn" hidden>Submit response</button>
+    </nav>
+    <p class="nav__saved" id="savedNote" aria-live="polite"></p>
+  </form>
+
+  <!-- ============ DONE ============ -->
+  <section class="screen screen--done" id="done" hidden aria-labelledby="doneTitle">
+    <svg class="done__seal" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+      <circle cx="32" cy="32" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="32" cy="32" r="25" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M21 32.5 28.5 40 43 25.5" fill="none" stroke="currentColor"
+            stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+    </svg>
+    <h2 id="doneTitle" class="done__title">Response recorded</h2>
+    <p class="done__body" id="doneBody">
+      Thank you. Your feedback has been logged with the Telecommunications
+      Division and will be reviewed against the returns from other divisions.
+    </p>
+    <p class="done__ref">Reference <span id="doneRef" class="done__refval">—</span></p>
+    <button class="btn btn--ghost" type="button" id="againBtn">Submit another response</button>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Jamaica Constabulary Force &middot; Telecommunications Division</p>
+  <p class="foot__small">Internal use. Responses are held by the Telecommunications Division.</p>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
