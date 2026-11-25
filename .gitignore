@@ -50,7 +50,6 @@ Pods/
 .venv/
 venv/
 __pycache__/
-.claude/worktrees/
 *.zip
 *.7z
 *.rar
